@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Library | Teni Scribes</title>
+    <meta name="description" content="Browse all Teni Scribes videos on writing, journaling, and storytelling. Organized by categories and playlists.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Video Library | Teni Scribes">
+    <meta property="og:description" content="Browse all Teni Scribes videos on writing, journaling, and storytelling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teniscribbles.com/videos">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-style" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Teni Scribes</h1>
+                        <p>Writing & Storytelling</p>
+                    </div>
+                </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="videos.html" class="nav-link active">Video Library</a></li>
+                        <li><a href="about.html" class="nav-link">About & Blog</a></li>
+                        <li><a href="index.html#newsletter" class="nav-link">Newsletter</a></li>
+                        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <div class="theme-toggle">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Video Library</h1>
+                <p class="page-subtitle">Poetry, spoken word, faith reflections, and storytelling. Find inspiration through words that heal and stories that transform.</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="video-search" placeholder="Search videos by title, topic, or keyword...">
+                    </div>
+                    <button class="btn btn-outline" id="search-filters">
+                        <i class="fas fa-filter"></i> Filters
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video Categories -->
+        <section class="video-categories-section">
+            <div class="container">
+                <h2 class="section-title">Categories</h2>
+                <div class="video-categories" id="video-categories">
+                    <!-- Categories will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Video Grid -->
+        <section class="video-library">
+            <div class="container">
+                <div class="video-library-header">
+                    <h2 class="section-title">All Videos</h2>
+                    <div class="sort-options">
+                        <select id="sort-videos" class="sort-select">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="popular">Most Popular</option>
+                            <option value="alphabetical">A to Z</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="video-grid" id="video-grid">
+                    <!-- Video cards will be populated dynamically -->
+                    <!-- For demo purposes, we'll include some placeholder cards -->
+                    
+                    <!-- Video Card 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">12:45</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Overcoming Writer's Block</h3>
+                            <p class="video-excerpt">Practical strategies to get past creative blocks and keep writing...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Writing Tips</span>
+                                <span class="video-date">2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Card 2 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">18:22</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Bullet Journal Setup for Writers</h3>
+                            <p class="video-excerpt">How to organize your writing projects using bullet journal techniques...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Journaling</span>
+                                <span class="video-date">1 month ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Card 3 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">22:15</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Creating Memorable Characters</h3>
+                            <p class="video-excerpt">Techniques for developing characters that feel real and compelling...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Storytelling</span>
+                                <span class="video-date">2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Card 4 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">15:30</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Best Writing Apps 2023</h3>
+                            <p class="video-excerpt">Review of the top writing applications for different types of writers...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Tools & Resources</span>
+                                <span class="video-date">3 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Card 5 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">25:10</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Plot Structure for Beginners</h3>
+                            <p class="video-excerpt">Learn the basics of three-act structure and how to apply it to your stories...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Storytelling</span>
+                                <span class="video-date">3 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video Card 6 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="thumbnail-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="video-duration">14:05</div>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title">Morning Pages Routine</h3>
+                            <p class="video-excerpt">How implementing morning pages can transform your writing practice...</p>
+                            <div class="video-meta">
+                                <span class="video-category">Journaling</span>
+                                <span class="video-date">4 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="btn btn-outline" id="load-more">Load More Videos</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter CTA -->
+        <section class="newsletter-cta">
+            <div class="container">
+                <div class="newsletter-cta-content">
+                    <h2>Never Miss a Video</h2>
+                    <p>Subscribe to the newsletter to get notified about new videos, writing prompts, and exclusive content.</p>
+                    <a href="index.html#newsletter" class="btn btn-primary">Subscribe Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Teni Scribes</h3>
+                    </div>
+                    <p class="footer-description">Creating content about writing, journaling, and storytelling to inspire your creative journey.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/c/TeniScribbles" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Video Library</a></li>
+                        <li><a href="about.html">About & Blog</a></li>
+                        <li><a href="index.html#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Video Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="videos.html?category=writing-tips">Writing Tips</a></li>
+                        <li><a href="videos.html?category=journaling">Journaling</a></li>
+                        <li><a href="videos.html?category=storytelling">Storytelling</a></li>
+                        <li><a href="videos.html?category=tools">Tools & Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> hello@teniscribbles.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in Creative Space</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Teni Scribes. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="youtube-api.js"></script>
+    
+    <!-- Additional CSS for videos page -->
+    <style>
+        .page-header {
+            padding: var(--space-xl) 0;
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.05) 0%, rgba(46, 139, 87, 0.05) 100%);
+        }
+        
+        .page-title {
+            text-align: center;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .page-subtitle {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto var(--space-lg);
+            color: var(--color-gray);
+        }
+        
+        .search-container {
+            display: flex;
+            gap: var(--space-md);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .search-box {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-white);
+            border-radius: var(--radius-md);
+            padding: 0 var(--space-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .search-box i {
+            color: var(--color-gray);
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: var(--space-sm);
+            border: none;
+            background: none;
+            font-family: var(--font-body);
+            font-size: 1rem;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+        }
+        
+        .video-categories-section {
+            padding: var(--space-xl) 0;
+            background-color: var(--color-white);
+        }
+        
+        .video-categories {
+            display: flex;
+            gap: var(--space-md);
+            overflow-x: auto;
+            padding: var(--space-sm) 0;
+            scrollbar-width: thin;
+        }
+        
+        .video-category {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-md);
+            background-color: var(--color-light);
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            min-width: 180px;
+        }
+        
+        .video-category:hover {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+        
+        .video-category.active {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+        
+        .video-category:hover .category-icon,
+        .video-category.active .category-icon {
+            color: var(--color-white);
+        }
+        
+        .category-icon {
+            font-size: 1.5rem;
+            color: var(--color-primary);
+        }
+        
+        .category-info h4 {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        
+        .category-info p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 0;
+        }
+        
+        .video-library {
+            padding: var(--space-xl) 0;
+            background-color: rgba(139, 69, 19, 0.03);
+        }
+        
+        .video-library-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .sort-select {
+            padding: var(--space-xs) var(--space-sm);
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-gray-light);
+            background-color: var(--color-white);
+            font-family: var(--font-body);
+            color: var(--color-dark);
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .video-card {
+            background-color: var(--color-white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+        }
+        
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            height: 180px;
+            background-color: var(--color-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .thumbnail-placeholder {
+            color: var(--color-white);
+            font-size: 3rem;
+        }
+        
+        .video-duration {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: var(--color-white);
+            padding: 2px 6px;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+        }
+        
+        .video-info {
+            padding: var(--space-md);
+        }
+        
+        .video-title {
+            margin-bottom: var(--space-xs);
+            font-size: 1.2rem;
+        }
+        
+        .video-excerpt {
+            color: var(--color-gray);
+            font-size: 0.9rem;
+            margin-bottom: var(--space-md);
+            display: -webkit-box;
+            /* -webkit-line-clamp: 2; */
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .video-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--color-primary);
+        }
+        
+        .load-more-container {
+            text-align: center;
+        }
+        
+        .newsletter-cta {
+            padding: var(--space-xl) 0;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+        
+        .newsletter-cta-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-cta h2 {
+            color: var(--color-white);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .newsletter-cta p {
+            margin-bottom: var(--space-lg);
+            opacity: 0.9;
+        }
+        
+        /* Dark mode adjustments for videos page */
+        .dark-mode .page-header {
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%);
+        }
+        
+        .dark-mode .search-box {
+            background-color: #2a2a2a;
+        }
+        
+        .dark-mode .search-box input {
+            color: #e0e0e0;
+        }
+        
+        .dark-mode .video-category {
+            background-color: #2a2a2a;
+        }
+        
+        .dark-mode .video-library {
+            background-color: rgba(139, 69, 19, 0.05);
+        }
+        
+        .dark-mode .video-card {
+            background-color: #2a2a2a;
+        }
+        
+        .dark-mode .video-title {
+            color: #e0e0e0;
+        }
+        
+        .dark-mode .video-excerpt {
+            color: #aaa;
+        }
+        
+        .dark-mode .sort-select {
+            background-color: #333;
+            border-color: #444;
+            color: #e0e0e0;
+        }
+        
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-library-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-md);
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .video-categories {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .video-category {
+                min-width: 140px;
+            }
+        }
+    </style>
+</body>
+</html>

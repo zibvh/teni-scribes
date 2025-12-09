@@ -1,0 +1,371 @@
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .header {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode .logo-text p {
+    color: #aaa;
+}
+
+.dark-mode .nav-link {
+    color: #e0e0e0;
+}
+
+.dark-mode .nav-link.active {
+    color: #8B4513;
+}
+
+.dark-mode .nav-link.active::after {
+    background-color: #8B4513;
+}
+
+.dark-mode .theme-btn {
+    color: #e0e0e0;
+}
+
+.dark-mode .theme-btn:hover {
+    background-color: #333;
+}
+
+.dark-mode .hero {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%);
+}
+
+.dark-mode .hero-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .hero-subtitle {
+    color: #aaa;
+}
+
+.dark-mode .latest-video {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .section-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .section-title::after {
+    background-color: #D2691E;
+}
+
+.dark-mode .video-info h3 {
+    color: #e0e0e0;
+}
+
+.dark-mode .video-description {
+    color: #aaa;
+}
+
+.dark-mode .featured-content {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+.dark-mode .content-card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dark-mode .card-text {
+    color: #aaa;
+}
+
+.dark-mode .card-icon {
+    color: #2E8B57;
+}
+
+.dark-mode .content-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .newsletter {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(46, 139, 87, 0.8) 100%);
+}
+
+.dark-mode .newsletter .section-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .newsletter-description {
+    color: #ddd;
+}
+
+.dark-mode .newsletter-benefits {
+    color: #e0e0e0;
+}
+
+.dark-mode .newsletter-form {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .form-group input {
+    background-color: #333;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .form-group input:focus {
+    border-color: var(--color-secondary);
+}
+
+.dark-mode .checkbox-group label {
+    color: #e0e0e0;
+}
+
+.dark-mode .form-note {
+    color: #888;
+}
+
+.dark-mode .form-success {
+    color: #2E8B57;
+}
+
+.dark-mode .footer {
+    background-color: #1a1a1a;
+    color: #aaa;
+}
+
+.dark-mode .footer-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .footer-logo {
+    color: #e0e0e0;
+}
+
+.dark-mode .footer-description {
+    color: #aaa;
+}
+
+.dark-mode .footer-links a {
+    color: #aaa;
+}
+
+.dark-mode .footer-links a:hover {
+    color: #2E8B57;
+}
+
+.dark-mode .footer-contact {
+    color: #aaa;
+}
+
+.dark-mode .social-links a {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-mode .social-links a:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.dark-mode .footer-bottom {
+    border-top-color: #333;
+    color: #888;
+}
+
+.dark-mode .footer-bottom a {
+    color: #aaa;
+}
+
+.dark-mode .footer-bottom a:hover {
+    color: #2E8B57;
+}
+
+/* Dark mode specific toggle icon */
+.dark-mode .theme-btn .fa-moon {
+    display: none;
+}
+
+.dark-mode .theme-btn .fa-sun {
+    display: block;
+}
+
+/* Dark mode adjustments for videos page */
+.dark-mode .page-header {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1) 0%, rgba(46, 139, 87, 0.1) 100%);
+}
+
+.dark-mode .page-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .page-subtitle {
+    color: #aaa;
+}
+
+.dark-mode .search-box {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+.dark-mode .search-box i {
+    color: #aaa;
+}
+
+.dark-mode .search-box input {
+    color: #e0e0e0;
+}
+
+.dark-mode .search-box input::placeholder {
+    color: #666;
+}
+
+.dark-mode .video-categories-section {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .video-category {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dark-mode .video-category:hover {
+    background-color: #8B4513;
+}
+
+.dark-mode .video-category.active {
+    background-color: #8B4513;
+}
+
+.dark-mode .category-icon {
+    color: #2E8B57;
+}
+
+.dark-mode .video-category:hover .category-icon,
+.dark-mode .video-category.active .category-icon {
+    color: #fff;
+}
+
+.dark-mode .video-library {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+.dark-mode .video-card {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .video-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .video-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .video-excerpt {
+    color: #aaa;
+}
+
+.dark-mode .sort-select {
+    background-color: #333;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .newsletter-cta {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(46, 139, 87, 0.8) 100%);
+}
+
+.dark-mode .newsletter-cta h2 {
+    color: #e0e0e0;
+}
+
+.dark-mode .newsletter-cta p {
+    color: #ddd;
+}
+
+/* Dark mode adjustments for about page */
+.dark-mode .about-section {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .about-intro {
+    color: #2E8B57;
+}
+
+.dark-mode .about-details {
+    color: #e0e0e0;
+}
+
+.dark-mode .about-details p {
+    color: #ccc;
+}
+
+.dark-mode .signature-line {
+    background-color: #8B4513;
+}
+
+.dark-mode .signature {
+    color: #2E8B57;
+}
+
+.dark-mode .blog-section {
+    background-color: rgba(139, 69, 19, 0.05);
+}
+
+.dark-mode .section-subtitle {
+    color: #aaa;
+}
+
+.dark-mode .blog-post {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .blog-post:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .blog-post-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .blog-post-excerpt {
+    color: #aaa;
+}
+
+.dark-mode .blog-post-meta {
+    color: #2E8B57;
+}
+
+.dark-mode .contact-section {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .contact-description {
+    color: #aaa;
+}
+
+.dark-mode .contact-item {
+    color: #e0e0e0;
+}
+
+.dark-mode .contact-item h4 {
+    color: #e0e0e0;
+}
+
+.dark-mode .contact-item p {
+    color: #aaa;
+}
+
+.dark-mode .contact-form textarea {
+    background-color: #333;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-mode .contact-form textarea::placeholder {
+    color: #666;
+}
+
+.dark-mode .contact-form textarea:focus {
+    border-color: var(--color-secondary);
+}

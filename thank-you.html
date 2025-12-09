@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Teni Scribes</title>
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-style" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        .thank-you-container {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-xxl) 0;
+        }
+        
+        .thank-you-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .thank-you-icon {
+            font-size: 4rem;
+            color: var(--color-secondary);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .thank-you-actions {
+            margin-top: var(--space-xl);
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .dark-mode .thank-you-icon {
+            color: var(--color-secondary-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Teni Scribes</h1>
+                        <p>Writing & Storytelling</p>
+                    </div>
+                </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="videos.html" class="nav-link">Video Library</a></li>
+                        <li><a href="about.html" class="nav-link">About & Blog</a></li>
+                        <li><a href="index.html#newsletter" class="nav-link">Newsletter</a></li>
+                        <li><a href="about.html#contact-form" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <div class="theme-toggle">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <section class="thank-you-container">
+            <div class="container">
+                <div class="thank-you-content">
+                    <div class="thank-you-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    
+                    <h1 class="page-title">Thank You!</h1>
+                    
+                    <div class="thank-you-message">
+                        <p><strong>Your message has been sent successfully!</strong></p>
+                        <p>I'll get back to you as soon as possible. Typically within 2-3 business days.</p>
+                        
+                        <p class="thank-you-note">
+                            <i class="fas fa-heart" style="color: var(--color-primary);"></i>
+                            Thank you for reaching out and being part of this creative journey!
+                        </p>
+                    </div>
+                    
+                    <div class="thank-you-actions">
+                        <a href="index.html" class="btn btn-primary">
+                            <i class="fas fa-home"></i> Back to Home
+                        </a>
+                        <a href="videos.html" class="btn btn-outline">
+                            <i class="fas fa-play-circle"></i> Watch Videos
+                        </a>
+                        <a href="about.html#blog" class="btn btn-outline">
+                            <i class="fas fa-book-open"></i> Read Blog
+                        </a>
+                    </div>
+                    
+                    <div class="thank-you-social" style="margin-top: var(--space-xl);">
+                        <p>Follow along on social media:</p>
+                        <div class="social-links" style="justify-content: center; margin-top: var(--space-sm);">
+                            <a href="https://www.youtube.com/c/TeniScribbles" target="_blank" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Teni Scribes</h3>
+                    </div>
+                    <p class="footer-description">Creating content about writing, journaling, and storytelling to inspire your creative journey.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Video Library</a></li>
+                        <li><a href="about.html">About & Blog</a></li>
+                        <li><a href="index.html#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> hello@teniscribbles.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Teni Scribes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    
+    <script>
+        // Set current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

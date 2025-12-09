@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teni Scribes | Writing, Journaling & Storytelling</title>
+    <meta name="description" content="Join Teni on a journey of writing, journaling, and storytelling. Explore creative content, writing tips, and join our community.">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Teni Scribes | Writing, Journaling & Storytelling">
+    <meta property="og:description" content="Join Teni on a journey of writing, journaling, and storytelling.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teniscribbles.com">
+    <meta property="og:image" content="https://teniscribbles.com/images/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Teni Scribes | Writing, Journaling & Storytelling">
+    <meta name="twitter:description" content="Join Teni on a journey of writing, journaling, and storytelling.">
+    <meta name="twitter:image" content="https://teniscribbles.com/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-style" disabled>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-feather-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Teni Scribes</h1>
+                        <p>Writing & Storytelling</p>
+                    </div>
+                </a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation -->
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link active">Home</a></li>
+                        <li><a href="videos.html" class="nav-link">Video Library</a></li>
+                        <li><a href="about.html" class="nav-link">About & Blog</a></li>
+                        <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <div class="theme-toggle">
+                        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Words That Heal, Stories That Inspire</h2>
+                        <p class="hero-subtitle">Explore the sacred art of written and spoken word—poetry, journaling, and storytelling as expressions of faith and creativity. Discover your voice as a beloved child of God.</p>
+                        <div class="hero-buttons">
+                            <a href="videos.html" class="btn btn-primary">Explore Content</a>
+                            <a href="#newsletter" class="btn btn-secondary">Join Our Circle</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-image-placeholder">
+                            <img src="/images/IMG-20251209-WA0003.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Latest Video Highlight -->
+        <section class="latest-video">
+            <div class="container">
+                <h2 class="section-title">Latest Video</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <div id="latest-video-placeholder" class="video-placeholder">
+                            <div class="placeholder-content">
+                                <i class="fas fa-play-circle"></i>
+                                <p>Loading latest video...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3 id="video-title">Latest from Teni Scribes</h3>
+                        <p id="video-description" class="video-description">Check out the newest content on writing, journaling, and storytelling.</p>
+                        <div class="video-actions">
+                            <a href="https://www.youtube.com/c/TeniScribbles" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-youtube"></i> Watch on YouTube
+                            </a>
+                            <button id="video-share" class="btn btn-outline">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Content Grid -->
+        <section class="featured-content">
+            <div class="container">
+                <h2 class="section-title">Featured Content</h2>
+                <div class="content-grid">
+                    <!-- Card 1 - Poetry -->
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <i class="fas fa-feather"></i>
+                        </div>
+                        <h3 class="card-title">Poetry & Verse</h3>
+                        <p class="card-text">Explore the rhythm and soul of poetry—from personal reflection to spoken word performances that celebrate faith, identity, and purpose.</p>
+                        <a href="videos.html?category=poetry" class="card-link">Discover <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card 2 - Spoken Word -->
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3 class="card-title">Spoken Word</h3>
+                        <p class="card-text">Experience the power of voice—sharing stories, affirmations, and truths through spoken word and performance art.</p>
+                        <a href="videos.html?category=spoken-word" class="card-link">Listen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card 3 - Faith & Journaling -->
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-praying"></i>
+                        </div>
+                        <h3 class="card-title">Faith & Reflection</h3>
+                        <p class="card-text">Journal your spiritual journey as a child of God. Discover how writing deepens your faith, identity, and connection to purpose.</p>
+                        <a href="videos.html?category=faith-journaling" class="card-link">Begin <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Card 4 - Creative Writing -->
+                    <div class="content-card">
+                        <div class="card-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="card-title">Creative Writing</h3>
+                        <p class="card-text">Master storytelling, character development, and narrative craft to tell your unique story with authenticity and grace.</p>
+                        <a href="videos.html?category=creative-writing" class="card-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="newsletter" id="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2 class="section-title">Join the Scribbler's Circle</h2>
+                        <p class="newsletter-description">Subscribe for weekly writing prompts, spiritual reflections, poetry, and exclusive spoken word content. Connect with a community of writers, believers, and storytellers on their creative journey.</p>
+                        <div class="newsletter-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Weekly poetry & writing prompts</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Exclusive spoken word performances</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Faith-inspired creative resources</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter-form">
+                        <!-- NETLIFY FORM - SIMPLE VERSION -->
+                        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+                            <!-- Honeypot field for spam bots (hidden) -->
+                            <p class="hidden">
+                                <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                            </p>
+                            
+                            <!-- Important: Form name for Netlify -->
+                            <input type="hidden" name="form-name" value="newsletter">
+                            
+                            <div class="form-group">
+                                <label for="name" class="visually-hidden">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="visually-hidden">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to receive updates and respect your privacy.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                            <p class="form-note">No spam, unsubscribe at any time.</p>
+                        </form>
+                        
+                        <!-- Success message will show after redirect -->
+                        <div id="formSuccess" class="form-success" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Thank you for subscribing! Please check your email to confirm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-feather-alt"></i>
+                        <h3>Teni Scribes</h3>
+                    </div>
+                    <p class="footer-description">Creating content about writing, journaling, and storytelling to inspire your creative journey.</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/c/TeniScribbles" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Video Library</a></li>
+                        <li><a href="about.html">About & Blog</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> hello@teniscribbles.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in Creative Space</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p>Subscribe for creative inspiration</p>
+                    <a href="#newsletter" class="btn btn-outline-light">Subscribe</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Teni Scribes. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="youtube-api.js"></script>
+    
+    <!-- Add CSS for hidden class -->
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</body>
+</html>
